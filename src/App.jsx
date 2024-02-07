@@ -25,9 +25,11 @@ const Payment = () => {
 export const App = () => {
   return (
     <>
-      <Payment />
-      <Payment />
-      <Payment />
+      <Payment amount="50" />
+      <hr />
+      <Payment amount="80" />
+      <hr />
+      <Payment amount="100" />
     </>
   );
 };
