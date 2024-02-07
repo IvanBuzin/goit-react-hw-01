@@ -26,6 +26,8 @@ export const App = () => {
   return (
     <>
       <Payment />
+      <Payment />
+      <Payment />
     </>
   );
 };
