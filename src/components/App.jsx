@@ -1,4 +1,4 @@
-// src/App.jsx
+// src/components/App.jsx
 
 import { Product } from "./Product";
 
@@ -7,45 +7,8 @@ export default function App() {
     <div>
       <h1>Best selling</h1>
 
-      <Product />
-      <Product />
-      <Product />
+      <Product name="Tacos With Lime" />
+      <Product name="Fries and Burger" />
     </div>
   );
 }
-
-const data = {
-  id: "1",
-  cardNumber: "1234 5678 9012 3456",
-  cardType: "Visa",
-  cardOwner: "John Doe",
-  date: "2024-01-01",
-  amount: 100,
-  description: "Payment for groceries",
-};
-
-const Payment = () => {
-  return (
-    <div>
-      <p>Amount: </p>
-      <p>Status: Paid or Pending</p>
-      <p>Description:</p>
-      <p>Card Nunber:</p>
-      <p>Card Type:</p>
-      <p>Card Holder Name:</p>
-      <p>Payment Date:</p>
-    </div>
-  );
-};
-
-export const App = () => {
-  return (
-    <>
-      <Payment amount="50" />
-      <hr />
-      <Payment amount="80" />
-      <hr />
-      <Payment amount="100" />
-    </>
-  );
-};
