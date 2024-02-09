@@ -1,6 +1,6 @@
 // src/components/App.jsx
 
-import { Product } from "./Product";
+import { Product } from "..components/Product";
 
 export default function App() {
   return (
