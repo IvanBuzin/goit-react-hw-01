@@ -1,14 +1,15 @@
-// src/components/App.jsx
-
-import { Product } from "../components/Product";
-
-export default function App() {
+import userData from "../userData.json";
+import friends from "../friends.json";
+import transactions from "../transactions.json";
+import { Profile } from "./profile/Profile";
+import { FriendList } from "./friendlist/FriendList";
+import { TransactionHistory } from "./transaction/TransactionHistory";
+export const App = () => {
   return (
     <div>
-      <h1>Best selling</h1>
-
-      <Product name="Tacos With Lime" />
-      <Product name="Fries and Burger" />
+      <Profile info={userData} />
+      <FriendList userInfo={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
-}
+};
