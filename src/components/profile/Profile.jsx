@@ -1,21 +1,19 @@
 import style from "./Profile.module.css";
 
 export const Profile = ({
-  info: {
-    avatar,
-    username,
-    tag,
-    location,
-    stats: { followers, views, likes },
-  },
+  image,
+  name,
+  tag,
+  location,
+  stats: { followers, views, likes },
 }) => {
   return (
     <div className={style.profileBox}>
       <div>
-        <img className={style.mainImage} src={avatar} alt="User avatar" />
-        <p className={style.nameTitle}>{username}</p>
-        <p className={style.nicknameTitle}>@{tag}</p>
-        <p className={style.location}>{location}</p>
+        <img className={style.userImage} src={image} alt="User avatar" />
+        <p className={style.userName}>{name}</p>
+        <p className={style.userNickname}>@{tag}</p>
+        <p className={style.userLocation}>{location}</p>
       </div>
       <ul className={style.statsList}>
         <li className={style.listItem}>
