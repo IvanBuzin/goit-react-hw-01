@@ -3,7 +3,7 @@ import friends from "./components/data/friends.json";
 import transactions from "./components/data/transactions.json";
 import { Profile } from "./components/Profil/Profile";
 import { FriendList } from "./components/Friendlists/FriendList";
-import { TransactionHistory } from "./components/FransactionHistory/TransactionHistory";
+import { TransactionHistory } from "./components/TransactionHistory/TransactionHistory";
 import "../node_modules/modern-normalize/modern-normalize.css";
 
 export const App = () => {
