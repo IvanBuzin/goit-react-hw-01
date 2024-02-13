@@ -1,9 +1,9 @@
 import userData from "./components/data/userData.json";
 import friends from "./components/data/friends.json";
 import transactions from "./components/data/transactions.json";
-import { Profile } from "./components/profile/Profile";
-import { FriendList } from "./components/friendlist/FriendList";
-import { TransactionHistory } from "./components/fransactionHistory/TransactionHistory";
+import { Profile } from "./components/Profile/Profile";
+import { FriendList } from "./components/Friendlist/FriendList";
+import { TransactionHistory } from "./components/FransactionHistory/TransactionHistory";
 import "../node_modules/modern-normalize/modern-normalize.css";
 
 export const App = () => {
